@@ -1384,6 +1384,8 @@
 
     <style name="SudBaseHeaderTitle">
         <!-- Before Honeycomb, layout_gravity is needed for FrameLayout to apply the margins -->
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:layout_gravity">top</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">3</item>
@@ -1391,6 +1393,8 @@
     </style>
 
     <style name="SudHeaderTitle" parent="SudBaseHeaderTitle">
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:layout_marginBottom">@dimen/sud_header_title_margin_bottom</item>
         <item name="android:layout_marginLeft">?attr/sudMarginStart</item>
         <item name="android:layout_marginRight">?attr/sudMarginEnd</item>
@@ -1824,13 +1828,13 @@
     <!-- GLIF layout -->
 
     <style name="SudGlifHeaderTitle" parent="SudBaseHeaderTitle">
-        <item name="android:gravity">?attr/sudGlifHeaderGravity</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:layout_marginBottom">?attr/sucGlifHeaderMarginBottom</item>
         <item name="android:layout_marginLeft">?attr/sudMarginStart</item>
         <item name="android:layout_marginRight">?attr/sudMarginEnd</item>
         <item name="android:layout_marginTop">?attr/sucGlifHeaderMarginTop</item>
         <item name="android:fontFamily">@string/sudFontSecondary</item>
-        <item name="android:textAlignment">gravity</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:textDirection">locale</item>
         <item name="android:accessibilityHeading" tools:targetApi="p">true</item>
@@ -1839,15 +1843,15 @@
 
     <style name="SudGlifHeaderTitleMaterialYou">
         <!-- Before Honeycomb, layout_gravity is needed for FrameLayout to apply the margins -->
+         <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:layout_gravity">top</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:gravity">?attr/sudGlifHeaderGravity</item>
         <item name="android:layout_marginBottom">?attr/sucGlifHeaderMarginBottom</item>
         <item name="android:layout_marginLeft">?attr/sudMarginStart</item>
         <item name="android:layout_marginRight">?attr/sudMarginEnd</item>
         <item name="android:layout_marginTop">?attr/sucGlifHeaderMarginTop</item>
         <item name="android:fontFamily">@string/sudFontSecondary</item>
-        <item name="android:textAlignment">gravity</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:textDirection">locale</item>
         <item name="android:accessibilityHeading" tools:targetApi="p">true</item>
@@ -1857,6 +1861,8 @@
 
     <style name="SudGlifHeaderTitleExpressive" parent="SudGlifHeaderTitleMaterialYou">
         <item name="android:lineHeight" tools:targetApi="28">@dimen/sud_glif_expressive_header_title_line_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:textSize">@dimen/sud_glif_expressive_header_title_size</item>
         <item name="android:textFontWeight" tools:targetApi="28">500</item>
         <item name="fontFamily">google-sans-flex</item>
