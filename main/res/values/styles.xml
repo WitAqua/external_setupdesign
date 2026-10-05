@@ -1857,6 +1857,8 @@
 
     <style name="SudGlifHeaderTitleExpressive" parent="SudGlifHeaderTitleMaterialYou">
         <item name="android:lineHeight" tools:targetApi="28">@dimen/sud_glif_expressive_header_title_line_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:textSize">@dimen/sud_glif_expressive_header_title_size</item>
         <item name="android:textFontWeight" tools:targetApi="28">500</item>
         <item name="fontFamily">google-sans-flex</item>
